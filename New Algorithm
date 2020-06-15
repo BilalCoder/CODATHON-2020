@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+    long long int n;
+    int a;
+    scanf("%lld %d", &n, &a);
+    while(n && a){
+        if(n%10==0)
+            n=n/10;
+        else
+            n=n-1;
+        a--;
+    }
+    printf("%lld", n);
+}
